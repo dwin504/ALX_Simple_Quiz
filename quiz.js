@@ -8,18 +8,17 @@ function checkAnswer() {
         return;
     }
 
-    const userAnswer = selectedOption.value
+    const userAnswer = selectedOption.value;
 
     const feedback = document.getElementById("feedback");
     
     if(userAnswer === correctAnswer) {
-        feedback.textContent = "correct! Well done.";
+        feedback.textContent = "Correct! Well done.";
     } else {
-        feedback.textcontent = "That's incorrect. Try again!";
+        feedback.textContent = "That's incorrect. Try again!";
     }
-
+}
     const submitButton = document.getElementById("submit-answer");
     submitButton.addEventListener("click", checkAnswer);
 
 
-}
